@@ -4,19 +4,20 @@ function setup() {
   }
   
   function draw() {
-    background(255, 204, 0);
+    background('rgba(0,255,0, 0.25)');
     noFill();
-    let a = 1;
-    let b = 18;
+    strokeWeight(3);
+    let a = 8;
+    let b = 0.17;
     let theta = 0;
     let x=0;
     let y=0;
-    for (let r = 0; r< 4000; r+=1 ) {
-        theta = r/180;
-        x	= a * cos(theta) * (exp() ^ (b * theta));
-        y	=	a * sin(theta) * (exp() ^ (b * theta));
-        point(x+300,y+300);
-        console.log(x,y);
+    for (let r = 0; r< 120; r+= 0.02 ) {
+        theta = r;
+        x	= a * cos(theta) * exp(b * theta);
+        y	=	a * sin(theta) * exp(b * theta);
+        point(x+300,y+200);
+        //console.log(x,y);
     }
     
  
