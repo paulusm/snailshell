@@ -4,7 +4,7 @@ function setup() {
   }
   
   function draw() {
-    background('rgba(0,255,0, 0.25)');
+    background('rgba(0,255,0, 0.25)') ;
     noFill();
     strokeWeight(3);
     let a = 8;
